@@ -164,6 +164,213 @@ export default function Home() {
     ))}
   </div>
 </section>
+{/* Projects Section */}
+<section
+  id="projects"
+  className="min-h-screen px-6 py-20"
+>
+  <div className="max-w-7xl mx-auto">
+
+    <p className="text-cyan-400 mb-4 text-center">
+      Featured Projects
+    </p>
+
+    <h2 className="text-5xl font-bold text-center mb-16">
+      Things I've Built
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-8">
+
+      {/* Digital Marketing */}
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
+        <h3 className="text-2xl font-bold mb-4">
+          Digital Marketing Platform
+        </h3>
+
+        <p className="text-gray-400 mb-6">
+          A platform connecting businesses, influencers,
+          startups and franchise seekers through a single ecosystem.
+        </p>
+
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-purple-500/20 rounded-full">Flutter</span>
+          <span className="px-3 py-1 bg-purple-500/20 rounded-full">Node.js</span>
+          <span className="px-3 py-1 bg-purple-500/20 rounded-full">MongoDB</span>
+        </div>
+      </div>
+
+      {/* Nexus */}
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 transition">
+        <h3 className="text-2xl font-bold mb-4">
+          Nexus
+        </h3>
+
+        <p className="text-gray-400 mb-6">
+          Interactive DSA learning platform with chatbot support,
+          visualizations and progress tracking.
+        </p>
+
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Flutter</span>
+          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Firebase</span>
+          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">AI</span>
+        </div>
+      </div>
+
+      {/* Problem-X */}
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
+        <h3 className="text-2xl font-bold mb-4">
+          Problem-X
+        </h3>
+
+        <p className="text-gray-400 mb-6">
+          Idea sharing and collaboration platform where users
+          can build teams and solve real-world challenges.
+        </p>
+
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-purple-500/20 rounded-full">Flutter</span>
+          <span className="px-3 py-1 bg-purple-500/20 rounded-full">Firebase</span>
+          <span className="px-3 py-1 bg-purple-500/20 rounded-full">UI/UX</span>
+        </div>
+      </div>
+
+      {/* Care Connect */}
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 transition">
+        <h3 className="text-2xl font-bold mb-4">
+          CARE CONNECT
+        </h3>
+
+        <p className="text-gray-400 mb-6">
+          Smart healthcare application focused on wellness,
+          health tracking and personal assistance.
+        </p>
+
+        <div className="flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Flutter</span>
+          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Firebase</span>
+          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Healthcare</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{/* Certifications Section */}
+<section
+  id="certifications"
+  className="min-h-screen px-6 py-20"
+>
+  <div className="max-w-7xl mx-auto">
+
+    <p className="text-cyan-400 mb-4 text-center">
+      Certifications
+    </p>
+
+    <h2 className="text-5xl font-bold text-center mb-16">
+      My Achievements
+    </h2>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+        <h3 className="text-xl font-bold mb-3">
+          GitHub Foundations
+        </h3>
+        <p className="text-gray-400">
+          Certified in Git, GitHub workflows,
+          repositories and collaboration.
+        </p>
+      </div>
+
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+        <h3 className="text-xl font-bold mb-3">
+          MongoDB Associate Developer
+        </h3>
+        <p className="text-gray-400">
+          Database design, queries and
+          application integration.
+        </p>
+      </div>
+
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+        <h3 className="text-xl font-bold mb-3">
+          OCI Architect Associate
+        </h3>
+        <p className="text-gray-400">
+          Oracle Cloud Infrastructure
+          architecture and cloud services.
+        </p>
+      </div>
+
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+        <h3 className="text-xl font-bold mb-3">
+          Postman Student Expert
+        </h3>
+        <p className="text-gray-400">
+          API testing, development and
+          collaboration workflows.
+        </p>
+      </div>
+
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
+        <h3 className="text-xl font-bold mb-3">
+          Python 101
+        </h3>
+        <p className="text-gray-400">
+          Python fundamentals and
+          problem solving concepts.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+{/* Contact Section */}
+<section
+  id="contact"
+  className="min-h-screen flex items-center justify-center px-6"
+>
+  <div className="max-w-4xl mx-auto text-center">
+
+    <p className="text-cyan-400 mb-4">
+      Contact
+    </p>
+
+    <h2 className="text-5xl font-bold mb-8">
+      Let's Build Something Amazing
+    </h2>
+
+    <p className="text-gray-400 text-lg mb-10">
+      I'm always open to discussing new opportunities,
+      collaborations and innovative projects.
+    </p>
+
+    <div className="space-y-4">
+      <p className="text-xl">
+        📧 balireddyvenky06@gmail.com
+      </p>
+
+      <p className="text-xl">
+        💻 github.com/Venky0600
+      </p>
+
+      <p className="text-xl">
+        🔗 Balireddy Venkatesh
+      </p>
+    </div>
+
+  </div>
+</section>
+<footer className="border-t border-white/10 py-10 text-center">
+  <h2 className="text-3xl font-bold mb-4">
+    Balireddy Venkatesh
+  </h2>
+
+  <p className="text-gray-500">
+    Flutter Developer • Full Stack Developer
+  </p>
+</footer>
 
     </main>
   );
