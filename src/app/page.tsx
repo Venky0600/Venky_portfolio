@@ -43,9 +43,14 @@ export default function Home() {
               View Projects
             </button>
 
-            <button className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-4 rounded-xl font-semibold transition">
-              Download Resume
-            </button>
+            <a
+  href="/resumee.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 rounded-full border border-cyan-400"
+>
+  View Resume
+</a>
           </div>
 
         </div>

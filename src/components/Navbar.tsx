@@ -10,10 +10,11 @@ export default function Navbar() {
           </h1>
 
           <div className="hidden md:flex gap-8 text-gray-300">
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#skills" className="hover:text-white">Skills</a>
-            <a href="#projects" className="hover:text-white">Projects</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
+            <a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certificates</a>
+<a href="#contact">Contact</a>
           </div>
 
           <button className="bg-purple-600 px-5 py-2 rounded-lg hover:bg-purple-700 transition">
