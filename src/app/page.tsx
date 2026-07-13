@@ -1,4 +1,7 @@
+import Hero from "@/components/hero";
 import Navbar from "@/components/Navbar";
+
+
 
 export default function Home() {
   return (
@@ -10,51 +13,7 @@ export default function Home() {
 
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6">
-        <div className="text-center max-w-4xl">
-
-          <div className="inline-block px-4 py-2 mb-6 rounded-full border border-cyan-400 text-cyan-400 text-sm">
-            🚀 Open to Opportunities
-          </div>
-
-          <p className="text-cyan-400 text-lg mb-4">
-            Hi, my name is
-          </p>
-
-          <h1 className="text-6xl md:text-8xl font-bold mb-4">
-            Balireddy
-            <span className="bg-gradient-to-r from-purple-500 to-cyan-400 bg-clip-text text-transparent">
-              {" "}Venkatesh
-            </span>
-          </h1>
-
-          <h2 className="text-3xl md:text-5xl text-gray-300 mb-6">
-            Flutter Developer • Full Stack Developer
-          </h2>
-
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
-            Building innovative digital solutions across Healthcare,
-            Education, Marketing and Business Platforms.
-          </p>
-
-          <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button className="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-xl font-semibold transition">
-              View Projects
-            </button>
-
-            <a
-  href="/resumee.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-6 py-3 rounded-full border border-cyan-400"
->
-  View Resume
-</a>
-          </div>
-
-        </div>
-      </section>
+      <Hero />
 
       {/* About Section */}
       <section
@@ -169,14 +128,14 @@ export default function Home() {
     ))}
   </div>
 </section>
-{/* Projects Section */}
+{/* ================= Projects Section ================= */}
 <section
   id="projects"
   className="min-h-screen px-6 py-20"
 >
   <div className="max-w-7xl mx-auto">
 
-    <p className="text-cyan-400 mb-4 text-center">
+    <p className="text-cyan-400 text-center mb-4">
       Featured Projects
     </p>
 
@@ -186,149 +145,267 @@ export default function Home() {
 
     <div className="grid md:grid-cols-2 gap-8">
 
-      {/* Digital Marketing */}
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
-        <h3 className="text-2xl font-bold mb-4">
-          Digital Marketing Platform
-        </h3>
+      {/* Digital Marketing Platform */}
+      <a
+        href="https://github.com/Venky0600/digital_marketing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:scale-105 transition-all duration-300 cursor-pointer">
 
-        <p className="text-gray-400 mb-6">
-          A platform connecting businesses, influencers,
-          startups and franchise seekers through a single ecosystem.
-        </p>
+          <h3 className="text-2xl font-bold mb-4">
+            🚀 Digital Marketing Platform
+          </h3>
 
-        <div className="flex flex-wrap gap-2">
-          <span className="px-3 py-1 bg-purple-500/20 rounded-full">Flutter</span>
-          <span className="px-3 py-1 bg-purple-500/20 rounded-full">Node.js</span>
-          <span className="px-3 py-1 bg-purple-500/20 rounded-full">MongoDB</span>
+          <p className="text-gray-400 mb-6">
+            A platform connecting businesses, influencers,
+            startups and franchise seekers through a
+            single ecosystem.
+          </p>
+
+          <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 bg-purple-500/20 rounded-full">Flutter</span>
+            <span className="px-3 py-1 bg-purple-500/20 rounded-full">Node.js</span>
+            <span className="px-3 py-1 bg-purple-500/20 rounded-full">MongoDB</span>
+          </div>
+
+          <p className="mt-6 text-cyan-400 font-semibold">
+            View on GitHub →
+          </p>
+
         </div>
-      </div>
+      </a>
 
       {/* Nexus */}
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 transition">
-        <h3 className="text-2xl font-bold mb-4">
-          Nexus
-        </h3>
+      <a
+        href="https://github.com/aravindpunyamantula/Nexus"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 hover:scale-105 transition-all duration-300 cursor-pointer">
 
-        <p className="text-gray-400 mb-6">
-          Interactive DSA learning platform with chatbot support,
-          visualizations and progress tracking.
-        </p>
+          <h3 className="text-2xl font-bold mb-4">
+            📚 Nexus
+          </h3>
 
-        <div className="flex flex-wrap gap-2">
-          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Flutter</span>
-          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Firebase</span>
-          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">AI</span>
+          <p className="text-gray-400 mb-6">
+            Interactive DSA Learning Platform with chatbot,
+            visualizations, progress tracking and
+            project-based learning.
+          </p>
+
+          <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Flutter</span>
+            <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Firebase</span>
+            <span className="px-3 py-1 bg-cyan-500/20 rounded-full">AI</span>
+          </div>
+
+          <p className="mt-6 text-cyan-400 font-semibold">
+            View on GitHub →
+          </p>
+
         </div>
-      </div>
+      </a>
 
       {/* Problem-X */}
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 transition">
-        <h3 className="text-2xl font-bold mb-4">
-          Problem-X
-        </h3>
+      <a
+        href="https://github.com/Venky0600/problemX"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500 hover:scale-105 transition-all duration-300 cursor-pointer">
 
-        <p className="text-gray-400 mb-6">
-          Idea sharing and collaboration platform where users
-          can build teams and solve real-world challenges.
-        </p>
+          <h3 className="text-2xl font-bold mb-4">
+            💡 Problem-X
+          </h3>
 
-        <div className="flex flex-wrap gap-2">
-          <span className="px-3 py-1 bg-purple-500/20 rounded-full">Flutter</span>
-          <span className="px-3 py-1 bg-purple-500/20 rounded-full">Firebase</span>
-          <span className="px-3 py-1 bg-purple-500/20 rounded-full">UI/UX</span>
+          <p className="text-gray-400 mb-6">
+            Flutter-based idea sharing and collaboration
+            platform where users solve real-world
+            challenges in teams.
+          </p>
+
+          <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 bg-purple-500/20 rounded-full">Flutter</span>
+            <span className="px-3 py-1 bg-purple-500/20 rounded-full">Firebase</span>
+            <span className="px-3 py-1 bg-purple-500/20 rounded-full">UI/UX</span>
+          </div>
+
+          <p className="mt-6 text-cyan-400 font-semibold">
+            View on GitHub →
+          </p>
+
         </div>
-      </div>
+      </a>
 
-      {/* Care Connect */}
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 transition">
-        <h3 className="text-2xl font-bold mb-4">
-          CARE CONNECT
-        </h3>
+      {/* CARE CONNECT */}
+      <a
+        href="https://github.com/Venky0600/YOUR_CARE_CONNECT_REPO"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 hover:scale-105 transition-all duration-300 cursor-pointer">
 
-        <p className="text-gray-400 mb-6">
-          Smart healthcare application focused on wellness,
-          health tracking and personal assistance.
-        </p>
+          <h3 className="text-2xl font-bold mb-4">
+            ❤️ CARE CONNECT
+          </h3>
 
-        <div className="flex flex-wrap gap-2">
-          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Flutter</span>
-          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Firebase</span>
-          <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Healthcare</span>
+          <p className="text-gray-400 mb-6">
+            Smart healthcare application focused on
+            wellness monitoring, health tracking,
+            reminders and personal assistance.
+          </p>
+
+          <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Flutter</span>
+            <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Firebase</span>
+            <span className="px-3 py-1 bg-cyan-500/20 rounded-full">Healthcare</span>
+          </div>
+
+          <p className="mt-6 text-cyan-400 font-semibold">
+            View on GitHub →
+          </p>
+
         </div>
-      </div>
+      </a>
 
     </div>
+
   </div>
 </section>
-{/* Certifications Section */}
+{/* ================= Certifications Section ================= */}
 <section
   id="certifications"
   className="min-h-screen px-6 py-20"
 >
   <div className="max-w-7xl mx-auto">
 
-    <p className="text-cyan-400 mb-4 text-center">
+    <p className="text-cyan-400 text-center mb-4">
       Certifications
     </p>
 
     <h2 className="text-5xl font-bold text-center mb-16">
-      My Achievements
+      My Certifications
     </h2>
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-        <h3 className="text-xl font-bold mb-3">
-          GitHub Foundations
-        </h3>
-        <p className="text-gray-400">
-          Certified in Git, GitHub workflows,
-          repositories and collaboration.
-        </p>
-      </div>
+      {/* GitHub */}
+      <a
+        href="/certificates/github-foundations.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-400 hover:scale-105 transition-all duration-300 cursor-pointer">
+          <h3 className="text-2xl font-bold mb-4">
+            GitHub Foundations
+          </h3>
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-        <h3 className="text-xl font-bold mb-3">
-          MongoDB Associate Developer
-        </h3>
-        <p className="text-gray-400">
-          Database design, queries and
-          application integration.
-        </p>
-      </div>
+          <p className="text-gray-400 mb-6">
+            Git, GitHub, repositories, branching, pull requests and collaboration.
+          </p>
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-        <h3 className="text-xl font-bold mb-3">
-          OCI Architect Associate
-        </h3>
-        <p className="text-gray-400">
-          Oracle Cloud Infrastructure
-          architecture and cloud services.
-        </p>
-      </div>
+          <span className="text-cyan-400 font-semibold">
+            📄 View Certificate →
+          </span>
+        </div>
+      </a>
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-        <h3 className="text-xl font-bold mb-3">
-          Postman Student Expert
-        </h3>
-        <p className="text-gray-400">
-          API testing, development and
-          collaboration workflows.
-        </p>
-      </div>
+      {/* MongoDB */}
+      <a
+        href="/certificates/mongodb.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-red-400 hover:scale-105 transition-all duration-300 cursor-pointer">
+          <h3 className="text-2xl font-bold mb-4">
+            MongoDB Associate Developer
+          </h3>
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
-        <h3 className="text-xl font-bold mb-3">
-          Python 101
-        </h3>
-        <p className="text-gray-400">
-          Python fundamentals and
-          problem solving concepts.
-        </p>
-      </div>
+          <p className="text-gray-400 mb-6">
+            Database design, CRUD operations, indexing and aggregation.
+          </p>
+
+          <span className="text-green-400 font-semibold">
+            📄 View Certificate →
+          </span>
+        </div>
+      </a>
+
+      {/* OCI */}
+      <a
+        href="/certificates/oci.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-red-400 hover:scale-105 transition-all duration-300 cursor-pointer">
+          <h3 className="text-2xl font-bold mb-4">
+            OCI Architect Associate
+          </h3>
+
+          <p className="text-gray-400 mb-6">
+            Oracle Cloud Infrastructure architecture, networking and security.
+          </p>
+
+          <span className="text-red-400 font-semibold">
+            📄 View Certificate →
+          </span>
+        </div>
+      </a>
+
+      {/* Postman */}
+      <a
+        href="/certificates/postman.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-orange-400 hover:scale-105 transition-all duration-300 cursor-pointer">
+          <h3 className="text-2xl font-bold mb-4">
+            Postman Student Expert
+          </h3>
+
+          <p className="text-gray-400 mb-6">
+            API testing, collections, environments and automation.
+          </p>
+
+          <span className="text-orange-400 font-semibold">
+            📄 View Certificate →
+          </span>
+        </div>
+      </a>
+
+      {/* Python */}
+      <a
+        href="/certificates/python101.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-yellow-400 hover:scale-105 transition-all duration-300 cursor-pointer">
+          <h3 className="text-2xl font-bold mb-4">
+            Python 101
+          </h3>
+
+          <p className="text-gray-400 mb-6">
+            Python fundamentals, functions, loops, OOP and problem solving.
+          </p>
+
+          <span className="text-yellow-400 font-semibold">
+            📄 View Certificate →
+          </span>
+        </div>
+      </a>
 
     </div>
+
   </div>
 </section>
 {/* Contact Section */}
