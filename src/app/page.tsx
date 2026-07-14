@@ -10,7 +10,11 @@ export default function Home() {
       {/* Background Glow */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-20 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl"></div>
-
+      <div className="aurora">
+    <div className="blob blob1"></div>
+    <div className="blob blob2"></div>
+    <div className="blob blob3"></div>
+</div>
       <Navbar />
 
       <Hero />
