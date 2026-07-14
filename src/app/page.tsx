@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Hero from "@/components/hero";
 import Navbar from "@/components/Navbar";
 
@@ -18,9 +19,10 @@ export default function Home() {
       <Navbar />
 
       <Hero />
+      <About />
 
       {/* About Section */}
-      <section
+      {/* <section
         id="about"
         className="min-h-screen flex items-center justify-center px-6"
       >
@@ -93,7 +95,7 @@ export default function Home() {
           </div>
 
         </div>
-      </section>
+      </section> */}
       {/* Skills Section */}
 <section
   id="skills"
