@@ -1,5 +1,7 @@
 import About from "@/components/About";
 import Hero from "@/components/hero";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 import Navbar from "@/components/Navbar";
 
 
@@ -20,6 +22,9 @@ export default function Home() {
 
       <Hero />
       <About />
+      <Skills />
+      <Projects />
+      
 
       {/* About Section */}
       {/* <section
@@ -97,7 +102,7 @@ export default function Home() {
         </div>
       </section> */}
       {/* Skills Section */}
-<section
+{/* <section
   id="skills"
   className="min-h-screen flex flex-col items-center justify-center px-6 py-20"
 >
@@ -133,9 +138,9 @@ export default function Home() {
       </div>
     ))}
   </div>
-</section>
+</section> */}
 {/* ================= Projects Section ================= */}
-<section
+{/* <section
   id="projects"
   className="min-h-screen px-6 py-20"
 >
@@ -149,10 +154,10 @@ export default function Home() {
       Things I've Built
     </h2>
 
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-2 gap-8"> */}
 
       {/* Digital Marketing Platform */}
-      <a
+      {/* <a
         href="https://github.com/Venky0600/digital_marketing"
         target="_blank"
         rel="noopener noreferrer"
@@ -181,10 +186,10 @@ export default function Home() {
           </p>
 
         </div>
-      </a>
+      </a> */}
 
       {/* Nexus */}
-      <a
+      {/* <a
         href="https://github.com/aravindpunyamantula/Nexus"
         target="_blank"
         rel="noopener noreferrer"
@@ -213,10 +218,10 @@ export default function Home() {
           </p>
 
         </div>
-      </a>
+      </a> */}
 
       {/* Problem-X */}
-      <a
+      {/* <a
         href="https://github.com/Venky0600/problemX"
         target="_blank"
         rel="noopener noreferrer"
@@ -245,10 +250,10 @@ export default function Home() {
           </p>
 
         </div>
-      </a>
+      </a> */}
 
       {/* CARE CONNECT */}
-      <a
+      {/* <a
         href="https://github.com/Venky0600/YOUR_CARE_CONNECT_REPO"
         target="_blank"
         rel="noopener noreferrer"
@@ -282,9 +287,9 @@ export default function Home() {
     </div>
 
   </div>
-</section>
+</section> */}
 {/* ================= Certifications Section ================= */}
-<section
+{/* <section
   id="certifications"
   className="min-h-screen px-6 py-20"
 >
@@ -298,10 +303,10 @@ export default function Home() {
       My Certifications
     </h2>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
 
       {/* GitHub */}
-      <a
+      {/* <a
         href="/certificates/github-foundations.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -320,10 +325,10 @@ export default function Home() {
             📄 View Certificate →
           </span>
         </div>
-      </a>
+      </a> */}
 
       {/* MongoDB */}
-      <a
+      {/* <a
         href="/certificates/mongodb.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -342,10 +347,10 @@ export default function Home() {
             📄 View Certificate →
           </span>
         </div>
-      </a>
+      </a> */}
 
       {/* OCI */}
-      <a
+      {/* <a
         href="/certificates/oci.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -364,10 +369,10 @@ export default function Home() {
             📄 View Certificate →
           </span>
         </div>
-      </a>
+      </a> */}
 
       {/* Postman */}
-      <a
+      {/* <a
         href="/certificates/postman.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -386,10 +391,10 @@ export default function Home() {
             📄 View Certificate →
           </span>
         </div>
-      </a>
+      </a> */}
 
       {/* Python */}
-      <a
+      {/* <a
         href="/certificates/python101.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -413,7 +418,7 @@ export default function Home() {
     </div>
 
   </div>
-</section>
+</section> */}
 {/* Contact Section */}
 <section
   id="contact"
