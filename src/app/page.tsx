@@ -2,7 +2,11 @@ import About from "@/components/About";
 import Hero from "@/components/hero";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Certificates from "@/components/Certificates";
+import Contact from "@/components/Contact";
 import Navbar from "@/components/Navbar";
+
+import { Certificate } from "crypto";
 
 
 
@@ -24,6 +28,9 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Certificates />
+      <Contact />
+
       
 
       {/* About Section */}
