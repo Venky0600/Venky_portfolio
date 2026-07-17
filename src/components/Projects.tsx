@@ -179,8 +179,7 @@ Featured
   whileTap={{
     scale: 0.95,
   }}
-  className="flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-400 text-black font-bold"
->
+className="relative overflow-hidden rounded-xl px-8 py-4 font-semibold bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-500/40 text-white">
   <FaGithub />
   GitHub
 </motion.a>
@@ -195,8 +194,7 @@ Featured
   whileTap={{
     scale: 0.95,
   }}
-  className="flex items-center gap-2 px-6 py-3 rounded-xl border border-cyan-400 hover:bg-cyan-400 hover:text-black transition"
->
+className="relative overflow-hidden rounded-xl px-8 py-4 font-semibold bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-500/40 text-white">
   <FaExternalLinkAlt />
   Live Demo
 </motion.a>

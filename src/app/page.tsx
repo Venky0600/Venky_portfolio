@@ -11,6 +11,8 @@ import CustomCursor from "@/components/CustomCursor";
 import MouseGlow from "@/components/MouseGlow";
 import Loader from "@/components/Loader";
 import Aurora from "@/components/Aurora";
+import SectionWrapper from "@/components/SectionWrapper";
+
 import Navbar from "@/components/Navbar";
 
 
@@ -39,9 +41,17 @@ export default function Home() {
       <Navbar />
 
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
+      <SectionWrapper>
+  <About />
+</SectionWrapper>
+
+<SectionWrapper>
+  <Skills />
+</SectionWrapper>
+
+<SectionWrapper>
+  <Projects />
+</SectionWrapper>
       <Certificates />
       <Contact />
       <Footer />

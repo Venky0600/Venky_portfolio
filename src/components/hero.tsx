@@ -1,5 +1,6 @@
 "use client";
 
+
 import { motion } from "framer-motion";
 import OrbitIcons from "@/components/Orbiticons";
 import { TypeAnimation } from "react-type-animation";
@@ -25,6 +26,25 @@ export default function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden px-6 lg:px-12"
     >
       {/* Background Glow */}
+      {[...Array(15)].map((_, i) => (
+  <motion.div
+    key={i}
+    animate={{
+      y: [0, -50, 0],
+      opacity: [0.2, 1, 0.2],
+    }}
+    transition={{
+      duration: 4 + i,
+      repeat: Infinity,
+    }}
+    className="absolute w-2 h-2 bg-cyan-400 rounded-full"
+    style={{
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+    }}
+  />
+))}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:60px_60px] opacity-20"></div>
 
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-500/20 blur-[150px] rounded-full"></div>
 
@@ -78,7 +98,8 @@ export default function Hero() {
             />
 <motion.div
 whileHover={{
-  scale: 1.15,
+  scale: 1.04,
+  rotate: 2,
 }}
   animate={{ y: [0, -8, 0] }}
   transition={{
@@ -332,13 +353,51 @@ Database
             speed={40}
             repeat={Infinity}
             className="text-3xl text-white font-semibold"
-          />
+          /><div className="mt-6 inline-flex items-center gap-3 px-5 py-3 rounded-full border border-cyan-400/30 bg-cyan-500/10 backdrop-blur-xl">
+  <span className="w-3 h-3 rounded-full bg-green-400 animate-pulse"></span>
+
+  <span className="text-cyan-300 font-medium">
+    Available for Internship & Full-Time
+  </span>
+</div>
                     <p className="mt-8 text-gray-400 text-lg leading-8 max-w-xl">
             Passionate Flutter Developer and Full Stack Developer focused on
             building premium mobile applications, scalable backend systems,
             modern UI/UX and AI-powered digital products.
           </p>
+          <div className="flex gap-10 mt-10">
 
+  <div>
+    <h2 className="text-4xl font-bold text-cyan-400">
+      5+
+    </h2>
+
+    <p className="text-gray-400">
+      Projects
+    </p>
+  </div>
+
+  <div>
+    <h2 className="text-4xl font-bold text-purple-400">
+      6+
+    </h2>
+
+    <p className="text-gray-400">
+      Certificates
+    </p>
+  </div>
+
+  <div>
+    <h2 className="text-4xl font-bold text-green-400">
+      2+
+    </h2>
+
+    <p className="text-gray-400">
+      Years Learning
+    </p>
+  </div>
+
+</div>
           {/* Buttons */}
 
           <div className="flex flex-wrap gap-5 mt-10">
@@ -356,8 +415,32 @@ Database
               to-purple-600
               font-semibold"
             >
-              🚀 Explore Projects
-            </motion.a>
+<motion.a
+  whileHover={{
+    scale: 1.05,
+  }}
+  href="#projects"
+  className="group relative overflow-hidden px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 font-semibold"
+>
+
+  <span className="relative z-10">
+    🚀 Explore Projects
+  </span>
+
+  <span
+    className="
+    absolute
+    inset-0
+    -translate-x-full
+    group-hover:translate-x-full
+    transition-transform
+    duration-700
+    bg-white/20
+    skew-x-12
+    "
+  />
+
+</motion.a>            </motion.a>
 
             <motion.a
               whileHover={{
@@ -367,11 +450,7 @@ Database
               whileTap={{ scale: 0.95 }}
               href="/resumee.pdf"
               target="_blank"
-              className="px-8 py-4 rounded-xl
-              border
-              border-gray-500
-              backdrop-blur-xl
-              bg-white/5"
+              className="relative overflow-hidden rounded-xl px-8 py-4 font-semibold bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-500/40 text-white"
             >
               📄 Download Resume
             </motion.a>
@@ -389,8 +468,14 @@ Database
               }}
               href="https://github.com/Venky0600"
               target="_blank"
-              className="text-3xl text-gray-400 hover:text-white"
-            >
+className="
+text-3xl
+text-gray-400
+transition-all
+duration-300
+hover:text-cyan-400
+hover:drop-shadow-[0_0_20px_rgba(34,211,238,.8)]
+"            >
               <FaGithub />
             </motion.a>
 

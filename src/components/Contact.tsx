@@ -105,8 +105,7 @@ export default function Contact() {
 
           <a
             href="mailto:balireddyvenky06mail@gmail.com"
-            className="px-8 py-4 rounded-xl bg-cyan-400 text-black font-bold hover:scale-105 transition"
-          >
+className="relative overflow-hidden rounded-xl px-8 py-4 font-semibold bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cyan-500/40 text-white"          >
             Send Email
           </a>
 

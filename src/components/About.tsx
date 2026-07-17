@@ -327,7 +327,7 @@ continuously learning to build better products every day.
   </motion.div>
   {/* Achievement Counters */}
 
-<motion.div
+{/* <motion.div
   initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
@@ -355,7 +355,7 @@ continuously learning to build better products every day.
     <p className="text-gray-400 mt-2">Graduate</p>
   </div>
 
-</motion.div>
+</motion.div> */}
 
 </div>
       </div>
