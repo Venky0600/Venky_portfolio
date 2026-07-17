@@ -4,7 +4,15 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Certificates from "@/components/Certificates";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import ScrollProgress from "@/components/ScrollProgress";
+import BackToTop from "@/components/BackToTop";
+import CustomCursor from "@/components/CustomCursor";
+import MouseGlow from "@/components/MouseGlow";
+import Loader from "@/components/Loader";
+import Aurora from "@/components/Aurora";
 import Navbar from "@/components/Navbar";
+
 
 import { Certificate } from "crypto";
 
@@ -22,6 +30,12 @@ export default function Home() {
     <div className="blob blob2"></div>
     <div className="blob blob3"></div>
 </div>
+      <Loader />
+      <Aurora />
+
+      <MouseGlow />
+      <CustomCursor />
+      <ScrollProgress />
       <Navbar />
 
       <Hero />
@@ -30,6 +44,8 @@ export default function Home() {
       <Projects />
       <Certificates />
       <Contact />
+      <Footer />
+      <BackToTop />
 
       
 
