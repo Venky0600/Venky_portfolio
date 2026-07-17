@@ -453,7 +453,7 @@ export default function Home() {
   </div>
 </section> */}
 {/* Contact Section */}
-<section
+{/* <section
   id="contact"
   className="min-h-screen flex items-center justify-center px-6"
 >
@@ -487,7 +487,7 @@ export default function Home() {
     </div>
 
   </div>
-</section>
+</section> */}
 <footer className="border-t border-white/10 py-10 text-center">
   <h2 className="text-3xl font-bold mb-4">
     Balireddy Venkatesh
