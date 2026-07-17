@@ -488,7 +488,7 @@ export default function Home() {
 
   </div>
 </section> */}
-<footer className="border-t border-white/10 py-10 text-center">
+{/* <footer className="border-t border-white/10 py-10 text-center">
   <h2 className="text-3xl font-bold mb-4">
     Balireddy Venkatesh
   </h2>
@@ -496,7 +496,7 @@ export default function Home() {
   <p className="text-gray-500">
     Flutter Developer • Full Stack Developer
   </p>
-</footer>
+</footer> */}
 
     </main>
   );
